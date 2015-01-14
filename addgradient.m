@@ -64,6 +64,8 @@ set(p,'CData',cdata, ...
     'FaceColor','interp', ...
     'EdgeColor','none');
 
+uistack(p,'bottom') % Put gradient underneath everything else
+
 if nargout
     varargout{1} = p;
 end
