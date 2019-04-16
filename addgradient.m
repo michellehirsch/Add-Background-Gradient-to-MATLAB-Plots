@@ -35,15 +35,14 @@ function varargout = addgradient(ax,topcolor,bottomcolor)
 %    p = addgradient(ax2,topcolor,bottomcolor);  % Red-green gradient to bottom plot
 %    set(p,'FaceAlpha',.3)  % Make transparent
 
-
 % Michelle Hirsch
 % mhirsch@mathworks.com
 % Copyright 2010-2014 The MathWorks, Inc
 
-
-if nargin==0 | isempty(ax)
+if nargin==0 || isempty(ax)
     ax = gca;
 end
+
 if nargin<2
     topcolor = [.95 .95 .95];
     bottomcolor = [.75 .75 .75];
